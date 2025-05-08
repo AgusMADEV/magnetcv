@@ -1,0 +1,75 @@
+/* ------------------- Variables corporativas ------------------- */
+:root{
+    --primary:#737C9A;
+    --secondary:#1F1915;
+    --accent:#E48C40;
+    --light:#f4f5f7;
+    --text:#343434;
+  }
+  
+  /* ------------------- Reset & fuente ------------------- */
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{
+    font-family:'Inter',system-ui,sans-serif;
+    background:var(--light);color:var(--text);line-height:1.65;
+  }
+  
+  /* ------------------- Layout ------------------- */
+  header{
+    background:var(--secondary);color:#fff;padding:18px 28px;
+    font-size:22px;font-weight:600;letter-spacing:.4px
+  }
+  .wrapper{display:flex;min-height:calc(100vh - 64px)}
+  aside.sidebar{
+    width:240px;background:var(--primary);color:#fff;
+    display:flex;flex-direction:column;padding:32px 24px
+  }
+  .sidebar .menu-top{flex:1}
+  main.content{flex:1;padding:48px;background:#fff}
+  
+  /* ------------------- Navegación ------------------- */
+  .sidebar a{
+    display:block;padding:10px 16px;margin-bottom:10px;
+    background:rgba(255,255,255,.08);border-radius:6px;
+    color:#fff;text-decoration:none;font-weight:500;transition:.15s
+  }
+  .sidebar a:hover,
+  .sidebar a.active{background:var(--accent)}
+  .sep{border-top:1px solid rgba(255,255,255,.25);margin:16px 0 12px;padding-top:20px}
+  .logout{background:#b03d2e}
+  .logout:hover{background:#962f22}
+  
+  /* ------------------- Formularios ------------------- */
+  form input,form textarea,form select{
+    width:100%;padding:10px;border:1px solid #d1d5db;border-radius:6px;margin-bottom:18px
+  }
+  form textarea{resize:vertical}
+  button{
+    padding:12px 24px;border:0;border-radius:6px;font-weight:600;cursor:pointer
+  }
+  button.primary{background:var(--secondary);color:#fff}
+  button.danger{background:#b03d2e;color:#fff}
+  
+  /* ------------------- Miscelánea ------------------- */
+  .container{max-width:860px;margin:0 auto}
+  h1{font-size:28px;margin-bottom:28px;color:var(--secondary)}
+  h2{font-size:22px;margin:32px 0 20px;color:var(--secondary)}
+  hr{border:0;border-top:1px solid #e6e6e6;margin:32px 0}
+  table{width:100%;border-collapse:collapse}
+  thead tr{background:var(--primary);color:#fff}
+  td,th{padding:10px;border-bottom:1px solid #e6e6e6}
+/* ------------------- Botón Guardar CV ------------------- */
+.btn-save{
+  background:var(--accent);
+  color:#fff;
+  padding:14px 30px;
+  border:0;
+  border-radius:8px;
+  font-size:18px;
+  font-weight:600;
+  cursor:pointer;
+  display:inline-block;
+  margin:32px 0 12px;
+}
+.btn-save:hover{opacity:.9}
